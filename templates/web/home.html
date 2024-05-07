@@ -1,0 +1,24 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kur sizi Salamliyir </title>
+    <h2>mehsullar</h2>
+
+    {% for instance in products %}
+    
+    <h4>id:{{ instance.id}}</h4>
+    <h4>Mehsulun adi:{{ instance.name}}</h4>
+    <h4>Qiymeti:{{instance.price}}</h4>
+
+    <h4>Tarix:{{instance.created_at}}</h4>
+    {% endfor %}
+</head>
+<body>
+    
+</body>
+</html>
